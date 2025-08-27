@@ -1,0 +1,128 @@
+/* Estilos generales de la galería */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFF8FC;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background: #FFCCEA;
+    padding: 20px;
+    border-bottom: 3px solid #BFECFF;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #222;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Barra de navegación */
+nav {
+    background: #BFECFF;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a:hover {
+    color: #FF69B4;
+}
+
+/* Sección de fotos */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #FF69B4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Galería de fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #BFECFF;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF69B4;
+}
+
+/* Botón flotante */
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.boton-flotante:hover {
+    background: #e05599;
+}

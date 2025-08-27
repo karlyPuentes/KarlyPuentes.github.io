@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFF8FC;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background: #FFCCEA;
+    padding: 20px;
+    border-bottom: 3px solid #BFECFF;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #222;
+}
+
+/* Barra de navegación */
+nav {
+    background: #BFECFF;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a:hover {
+    color: #FF69B4;
+}
+
+/* Secciones */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #FF69B4;
+    margin-bottom: 15px;
+}
+
+/* Lista de intereses */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    background: #FFCCEA;
+    margin: 6px 0;
+    border-radius: 8px;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #BFECFF;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+    }
+}
